@@ -1,0 +1,282 @@
+//
+// Core Framework Theme - Variables
+//
+// @license    MIT (https://mit-license.org/)
+// @author     Louis Ouellet <louis@laswitchtech.com>
+//
+
+// Spacing
+@spacer: 1rem;
+@gap: @spacer;
+@margin: @spacer;
+@margin-x: @spacer * 2;
+@margin-y: @spacer;
+@padding: @spacer;
+@padding-x: @spacer * 2;
+@padding-y: @spacer;
+@gutter: @spacer * 2;
+
+// Breakpoints
+@xs: 0;
+@sm: 576px;
+@md: 768px;
+@lg: 992px;
+@xl: 1200px;
+@xxl: 1400px;
+
+// Rates
+@luma: 50%;
+@darken: 10%;
+@lighten: 10%;
+@fade: 17.5%;
+
+// Colors - Base
+@blue: #0d6efd;
+@indigo: #6610f2;
+@purple: #6f42c1;
+@pink: #d63384;
+@red: #dc3545;
+@orange: #fd7e14;
+@yellow: #ffc107;
+@green: #198754;
+@teal: #20c997;
+@cyan: #0dcaf0;
+@white: #fff;
+@black: #000;
+@gray-100: #f8f9fa;
+@gray-200: #e9ecef;
+@gray-300: #dee2e6;
+@gray-400: #ced4da;
+@gray-500: #adb5bd;
+@gray-600: #6c757d;
+@gray-700: #495057;
+@gray-800: #343a40;
+@gray-900: #212529;
+@gray: @gray-600;
+@gray-light: @gray-200;
+@gray-dark: @gray-800;
+
+// Colors - Base - Alternate
+@blue-alt: darken(@blue, @darken);
+@indigo-alt: darken(@indigo, @darken);
+@purple-alt: darken(@purple, @darken);
+@pink-alt: darken(@pink, @darken);
+@red-alt: darken(@red, @darken);
+@orange-alt: darken(@orange, @darken);
+@yellow-alt: darken(@yellow, @darken);
+@green-alt: darken(@green, @darken);
+@teal-alt: darken(@teal, @darken);
+@cyan-alt: darken(@cyan, @darken);
+@white-alt: darken(@white, @darken);
+@black-alt: darken(@black, @darken);
+@gray-100-alt: darken(@gray-100, @darken);
+@gray-200-alt: darken(@gray-200, @darken);
+@gray-300-alt: darken(@gray-300, @darken);
+@gray-400-alt: darken(@gray-400, @darken);
+@gray-500-alt: darken(@gray-500, @darken);
+@gray-600-alt: darken(@gray-600, @darken);
+@gray-700-alt: darken(@gray-700, @darken);
+@gray-800-alt: darken(@gray-800, @darken);
+@gray-900-alt: darken(@gray-900, @darken);
+@gray-alt: darken(@gray, @darken);
+@gray-light-alt: darken(@gray-light, @darken);
+@gray-dark-alt: darken(@gray-dark, @darken);
+
+// Colors - Base - Fade
+@blue-fade: fade(@blue, @fade);
+@indigo-fade: fade(@indigo, @fade);
+@purple-fade: fade(@purple, @fade);
+@pink-fade: fade(@pink, @fade);
+@red-fade: fade(@red, @fade);
+@orange-fade: fade(@orange, @fade);
+@yellow-fade: fade(@yellow, @fade);
+@green-fade: fade(@green, @fade);
+@teal-fade: fade(@teal, @fade);
+@cyan-fade: fade(@cyan, @fade);
+@white-fade: fade(@white, @fade);
+@black-fade: fade(@black, @fade);
+@gray-100-fade: fade(@gray-100, @fade);
+@gray-200-fade: fade(@gray-200, @fade);
+@gray-300-fade: fade(@gray-300, @fade);
+@gray-400-fade: fade(@gray-400, @fade);
+@gray-500-fade: fade(@gray-500, @fade);
+@gray-600-fade: fade(@gray-600, @fade);
+@gray-700-fade: fade(@gray-700, @fade);
+@gray-800-fade: fade(@gray-800, @fade);
+@gray-900-fade: fade(@gray-900, @fade);
+@gray-fade: fade(@gray, @fade);
+@gray-light-fade: fade(@gray-light, @fade);
+@gray-dark-fade: fade(@gray-dark, @fade);
+
+// Colors - Base - RGB
+@blue-rgb: red(@blue), green(@blue), blue(@blue);
+@indigo-rgb: red(@indigo), green(@indigo), blue(@indigo);
+@purple-rgb: red(@purple), green(@purple), blue(@purple);
+@pink-rgb: red(@pink), green(@pink), blue(@pink);
+@red-rgb: red(@red), green(@red), blue(@red);
+@orange-rgb: red(@orange), green(@orange), blue(@orange);
+@yellow-rgb: red(@yellow), green(@yellow), blue(@yellow);
+@green-rgb: red(@green), green(@green), blue(@green);
+@teal-rgb: red(@teal), green(@teal), blue(@teal);
+@cyan-rgb: red(@cyan), green(@cyan), blue(@cyan);
+@white-rgb: red(@white), green(@white), blue(@white);
+@black-rgb: red(@black), green(@black), blue(@black);
+@gray-100-rgb: red(@gray-100), green(@gray-100), blue(@gray-100);
+@gray-200-rgb: red(@gray-200), green(@gray-200), blue(@gray-200);
+@gray-300-rgb: red(@gray-300), green(@gray-300), blue(@gray-300);
+@gray-400-rgb: red(@gray-400), green(@gray-400), blue(@gray-400);
+@gray-500-rgb: red(@gray-500), green(@gray-500), blue(@gray-500);
+@gray-600-rgb: red(@gray-600), green(@gray-600), blue(@gray-600);
+@gray-700-rgb: red(@gray-700), green(@gray-700), blue(@gray-700);
+@gray-800-rgb: red(@gray-800), green(@gray-800), blue(@gray-800);
+@gray-900-rgb: red(@gray-900), green(@gray-900), blue(@gray-900);
+@gray-rgb: red(@gray), green(@gray), blue(@gray);
+@gray-light-rgb: red(@gray-light), green(@gray-light), blue(@gray-light);
+@gray-dark-rgb: red(@gray-dark), green(@gray-dark), blue(@gray-dark);
+
+// Colors - Base - RGB - Alternate
+@blue-alt-rgb: red(@blue-alt), green(@blue-alt), blue(@blue-alt);
+@indigo-alt-rgb: red(@indigo-alt), green(@indigo-alt), blue(@indigo-alt);
+@purple-alt-rgb: red(@purple-alt), green(@purple-alt), blue(@purple-alt);
+@pink-alt-rgb: red(@pink-alt), green(@pink-alt), blue(@pink-alt);
+@red-alt-rgb: red(@red-alt), green(@red-alt), blue(@red-alt);
+@orange-alt-rgb: red(@orange-alt), green(@orange-alt), blue(@orange-alt);
+@yellow-alt-rgb: red(@yellow-alt), green(@yellow-alt), blue(@yellow-alt);
+@green-alt-rgb: red(@green-alt), green(@green-alt), blue(@green-alt);
+@teal-alt-rgb: red(@teal-alt), green(@teal-alt), blue(@teal-alt);
+@cyan-alt-rgb: red(@cyan-alt), green(@cyan-alt), blue(@cyan-alt);
+@white-alt-rgb: red(@white-alt), green(@white-alt), blue(@white-alt);
+@black-alt-rgb: red(@black-alt), green(@black-alt), blue(@black-alt);
+@gray-100-alt-rgb: red(@gray-100-alt), green(@gray-100-alt), blue(@gray-100-alt);
+@gray-200-alt-rgb: red(@gray-200-alt), green(@gray-200-alt), blue(@gray-200-alt);
+@gray-300-alt-rgb: red(@gray-300-alt), green(@gray-300-alt), blue(@gray-300-alt);
+@gray-400-alt-rgb: red(@gray-400-alt), green(@gray-400-alt), blue(@gray-400-alt);
+@gray-500-alt-rgb: red(@gray-500-alt), green(@gray-500-alt), blue(@gray-500-alt);
+@gray-600-alt-rgb: red(@gray-600-alt), green(@gray-600-alt), blue(@gray-600-alt);
+@gray-700-alt-rgb: red(@gray-700-alt), green(@gray-700-alt), blue(@gray-700-alt);
+@gray-800-alt-rgb: red(@gray-800-alt), green(@gray-800-alt), blue(@gray-800-alt);
+@gray-900-alt-rgb: red(@gray-900-alt), green(@gray-900-alt), blue(@gray-900-alt);
+@gray-alt-rgb: red(@gray-alt), green(@gray-alt), blue(@gray-alt);
+@gray-light-alt-rgb: red(@gray-light-alt), green(@gray-light-alt), blue(@gray-light-alt);
+@gray-dark-alt-rgb: red(@gray-dark-alt), green(@gray-dark-alt), blue(@gray-dark-alt);
+
+// Colors - UI
+@success: @green;
+@danger: @red;
+@warning: @yellow;
+@info: @cyan;
+@primary: @blue;
+@secondary: @gray;
+@light: @gray-light;
+@dark: @gray-dark;
+
+// Colors - UI - Alternate
+@success-alt: darken(@success, @darken);
+@danger-alt: darken(@danger, @darken);
+@warning-alt: darken(@warning, @darken);
+@info-alt: darken(@info, @darken);
+@primary-alt: darken(@primary, @darken);
+@secondary-alt: darken(@secondary, @darken);
+@light-alt: darken(@light, @darken);
+@dark-alt: darken(@dark, @darken);
+
+// Colors - UI - Fade
+@success-fade: fade(@success, @fade);
+@danger-fade: fade(@danger, @fade);
+@warning-fade: fade(@warning, @fade);
+@info-fade: fade(@info, @fade);
+@primary-fade: fade(@primary, @fade);
+@secondary-fade: fade(@secondary, @fade);
+@light-fade: fade(@light, @fade);
+@dark-fade: fade(@dark, @fade);
+
+// Colors - UI - RGB
+@success-rgb: @green-rgb;
+@danger-rgb: @red-rgb;
+@warning-rgb: @yellow-rgb;
+@info-rgb: @cyan-rgb;
+@primary-rgb: @blue-rgb;
+@secondary-rgb: @gray-rgb;
+@light-rgb: @gray-light-rgb;
+@dark-rgb: @gray-dark-rgb;
+
+// Colors - UI - RGB - Alternate
+@success-alt-rgb: red(@success-alt), green(@success-alt), blue(@success-alt);
+@danger-alt-rgb: red(@danger-alt), green(@danger-alt), blue(@danger-alt);
+@warning-alt-rgb: red(@warning-alt), green(@warning-alt), blue(@warning-alt);
+@info-alt-rgb: red(@info-alt), green(@info-alt), blue(@info-alt);
+@primary-alt-rgb: red(@primary-alt), green(@primary-alt), blue(@primary-alt);
+@secondary-alt-rgb: red(@secondary-alt), green(@secondary-alt), blue(@secondary-alt);
+@light-alt-rgb: red(@light-alt), green(@light-alt), blue(@light-alt);
+@dark-alt-rgb: red(@dark-alt), green(@dark-alt), blue(@dark-alt);
+
+// Gradient
+@gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+
+// Font
+@font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+@font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+// Body
+@body-bg: @white;
+@body-bg-rgb: @white-rgb;
+@body-bg-alt: @dark;
+@body-bg-alt-rgb: @dark-rgb;
+@text-muted: @gray;
+@text-muted-rgb: @gray-rgb;
+@text-muted-alt: @gray-light;
+@text-muted-alt-rgb: @gray-light-rgb;
+@body-font-family: @font-sans-serif;
+@body-font-size: 1rem;
+@body-font-weight: 400;
+@body-line-height: 1.5;
+@body-color: @dark;
+@body-color-rgb: @dark-rgb;
+@body-color-alt: @light;
+@body-color-alt-rgb: @light-rgb;
+
+// Headings
+@heading-color: inherit;
+
+// Links
+@link-color: @primary;
+@link-color-rgb: @primary-rgb;
+@link-decoration: underline;
+@link-hover-color: @primary-alt;
+@link-hover-color-rgb: @primary-alt-rgb;
+
+// Code
+@code-color: @pink;
+
+// Highlight
+@highlight-color: @body-color;
+@highlight-bg: @warning-fade;
+
+// Border
+@border-width: 1px;
+@border-style: solid;
+@border-color: @gray-400;
+@border-color-translucent: rgba(0, 0, 0, @fade);
+@border-radius: 0.375rem;
+@border-radius-sm: calc(@border-radius / 1.5);
+@border-radius-lg: calc(@border-radius-sm * 2);
+@border-radius-xl: calc(@border-radius-lg * 2);
+@border-radius-xxl: calc(@border-radius-xl * 2);
+@border-radius-pill: 50rem;
+
+// Box Shadow
+@box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+@box-shadow-sm: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+@box-shadow-lg: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+@box-shadow-inset: inset 0 1px 2px rgba(0, 0, 0, 0.075);
+
+// Focus Ring
+@focus-ring-width: 0.25rem;
+@focus-ring-opacity: 0.25;
+@focus-ring-color: fade(@primary-alt, @fade * 2);
+
+// Form
+@form-valid-color: @success;
+@form-valid-border-color: @success;
+@form-invalid-color: @danger;
+@form-invalid-border-color: @danger;

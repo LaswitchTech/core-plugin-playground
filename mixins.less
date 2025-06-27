@@ -1,0 +1,27 @@
+//
+//   Core Framework - Mixins
+//
+//   @license    MIT (https://mit-license.org/)
+//   @author     Louis Ouellet <louis@laswitchtech.com>
+//
+
+// Set appropriate font color based on background color
+.set-color(@color) when (luma(@color) > @luma) {
+    color: @body-color !important;
+}
+.set-color(@color) when not (luma(@color) > @luma) {
+    color: @body-color-alt !important;
+}
+
+// Column sizes 1-12
+.generate-cols(@prefix: ~"", @media: ~"") {
+    .loop(@i) when (@i =< 12) {
+        @{media}.col@{prefix}@{i} {
+            flex: 0 0 percentage((@i / 12));
+            max-width: percentage((@i / 12));
+        }
+        .loop(@i + 1);
+    }
+    .loop(@i) {}
+}
+
