@@ -1,9 +1,3 @@
-<!--
-  Core Framework - View File
-
-  @license    MIT (https://mit-license.org/)
-  @author     Louis Ouellet <louis@laswitchtech.com>
--->
 <!doctype html>
 <html lang="en" data-bs-theme="auto">
     <head>
