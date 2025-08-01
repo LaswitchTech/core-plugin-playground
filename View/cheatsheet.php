@@ -1525,76 +1525,83 @@
             </aside>
             <article class="col-12 col-md-10 my-3" id="feed">
                 <div>
-                    <div class="bd-example-snippet bd-code-snippet">
+                    <!-- <div class="bd-example-snippet bd-code-snippet">
                         <div class="bd-example m-0 border-0">
                             <div class="feed">
                                 <div class="post">
-                                    <div class="title-block"><h2 class="title"></h2></div>
-                                    <div class="user-block user-select-none">
-                                        <img class="avatar img-circle rounded-circle img-bordered-sm" alt="Avatar" src="/avatar?username=<?= $this->Auth->user()->username ?>">
-                                        <span class="username mt-2">
-                                            <a class="text-decoration-none" href="/profile"><?= $this->Auth->user()->username ?></a>
-                                        </span>
-                                        <span class="description mt-1">
-                                            <i class="bi-clock me-1"></i>
-                                            <time class="timeago" datetime="12-31-2024 19:00:00"></time>
-                                        </span>
+                                    <div class="title"><h2 class="title"></h2></div>
+                                    <div class="owner">
+                                        <img class="avatar" src="/avatar?username=<?= $this->Auth->user()->username ?>">
+                                        <div class="meta">
+                                            <a class="username" href="#"><?= $this->Auth->user()->username ?></a>
+                                            <div class="metadata">
+                                                <i class="bi-clock me-1"></i>
+                                                <time class="timeago" datetime="12-31-2024 19:00:00"></time>
+                                            </div>
+                                        </div>
                                     </div>
                                     <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc facilisis, nibh et accumsan interdum, turpis sapien ultrices eros, consectetur bibendum elit augue a odio. Integer ut nunc commodo, condimentum massa nec, efficitur dolor. Mauris ut enim tellus. Fusce laoreet ultricies turpis et malesuada. Donec a congue nisl. Quisque et rhoncus justo. Integer commodo purus a aliquam finibus.</p>
+                                    <div class="more"><button type="button" class="btn btn-sm btn-outline-primary">Show more</button></div>
                                     <p class="controls user-select-none">
-                                        <button class="text-decoration-none btn btn-sm btn-link"><i class="bi me-1 bi-hand-thumbs-up"></i><span>Like</span></button>
-                                        <button class="text-decoration-none btn btn-sm btn-link"><i class="bi me-1 bi-share"></i><span>Share</span></button>
-                                        <button class="text-decoration-none btn btn-sm btn-link"><i class="bi me-1 bi-sticky"></i><span>Note</span></button>
-                                        <button class="text-decoration-none btn btn-sm btn-link"><i class="bi me-1 bi-chat-text"></i><span>Commments</span></button>
-                                        <button class="text-decoration-none btn btn-sm btn-link"><i class="bi me-1 bi-pencil-square"></i><span>Edit</span></button>
-                                        <button class="text-decoration-none btn btn-sm btn-link"><i class="bi me-1 bi-trash"></i><span>Delete</span></button>
-                                    </p>
-                                </div>
-                                <div class="post">
-                                    <div class="title-block"><h2 class="title">Lorem Ipsum</h2></div>
-                                    <div class="user-block user-select-none">
-                                        <img class="avatar img-circle rounded-circle img-bordered-sm" alt="Avatar" src="/avatar?username=<?= $this->Auth->user()->username ?>">
-                                        <span class="username mt-2">
-                                            <a class="text-decoration-none" href="/profile"><?= $this->Auth->user()->username ?></a>
-                                        </span>
-                                        <span class="description mt-1">
-                                            <i class="bi-clock me-1"></i>
-                                            <time class="timeago" datetime="12-31-2024 19:00:00"></time>
-                                        </span>
-                                    </div>
-                                    <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc facilisis, nibh et accumsan interdum, turpis sapien ultrices eros, consectetur bibendum elit augue a odio. Integer ut nunc commodo, condimentum massa nec, efficitur dolor. Mauris ut enim tellus. Fusce laoreet ultricies turpis et malesuada. Donec a congue nisl. Quisque et rhoncus justo. Integer commodo purus a aliquam finibus.</p>
-                                    <p class="controls user-select-none">
-                                        <button class="text-decoration-none btn btn-sm btn-link"><i class="bi me-1 bi-hand-thumbs-up"></i><span>Like</span></button>
-                                        <button class="text-decoration-none btn btn-sm btn-link"><i class="bi me-1 bi-share"></i><span>Share</span></button>
-                                        <button class="text-decoration-none btn btn-sm btn-link"><i class="bi me-1 bi-sticky"></i><span>Note</span></button>
-                                        <button class="text-decoration-none btn btn-sm btn-link"><i class="bi me-1 bi-chat-text"></i><span>Commments</span></button>
-                                        <button class="text-decoration-none btn btn-sm btn-link"><i class="bi me-1 bi-pencil-square"></i><span>Edit</span></button>
-                                        <button class="text-decoration-none btn btn-sm btn-link"><i class="bi me-1 bi-trash"></i><span>Delete</span></button>
-                                    </p>
-                                </div>
-                                <div class="post">
-                                    <div class="title-block"><h2 class="title"></h2></div>
-                                    <div class="user-block user-select-none">
-                                        <img class="avatar img-circle rounded-circle img-bordered-sm" alt="Avatar" src="/avatar?username=<?= $this->Auth->user()->username ?>">
-                                        <span class="username mt-2">
-                                            <a class="text-decoration-none" href="/profile"><?= $this->Auth->user()->username ?></a>
-                                        </span>
-                                        <span class="description mt-1">
-                                            <i class="bi-clock me-1"></i>
-                                            <time class="timeago" datetime="12-31-2024 19:00:00"></time>
-                                        </span>
-                                    </div>
-                                    <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc facilisis, nibh et accumsan interdum, turpis sapien ultrices eros, consectetur bibendum elit augue a odio. Integer ut nunc commodo, condimentum massa nec, efficitur dolor. Mauris ut enim tellus. Fusce laoreet ultricies turpis et malesuada. Donec a congue nisl. Quisque et rhoncus justo. Integer commodo purus a aliquam finibus.</p>
-                                    <p class="controls user-select-none">
-                                        <button class="text-decoration-none btn btn-sm btn-link me-1"><i class="bi me-1 bi-hand-thumbs-up"></i><span>Like</span></button>
-                                        <button class="text-decoration-none btn btn-sm btn-link me-1"><i class="bi me-1 bi-share"></i><span>Share</span></button>
-                                        <button class="text-decoration-none btn btn-sm btn-link me-1"><i class="bi me-1 bi-sticky"></i><span>Note</span></button>
-                                        <button class="text-decoration-none btn btn-sm btn-link me-1"><i class="bi me-1 bi-chat-text"></i><span>Commments</span></button>
-                                        <button class="text-decoration-none btn btn-sm btn-link me-1"><i class="bi me-1 bi-pencil-square"></i><span>Edit</span></button>
-                                        <button class="text-decoration-none btn btn-sm btn-link me-1"><i class="bi me-1 bi-trash"></i><span>Delete</span></button>
+                                        <button class="btn btn-sm btn-link"><i class="bi me-1 bi-hand-thumbs-up"></i><span>Like</span></button>
+                                        <button class="btn btn-sm btn-link"><i class="bi me-1 bi-share"></i><span>Share</span></button>
+                                        <button class="btn btn-sm btn-link"><i class="bi me-1 bi-sticky"></i><span>Note</span></button>
+                                        <button class="btn btn-sm btn-link"><i class="bi me-1 bi-chat-text"></i><span>Commments</span></button>
+                                        <button class="btn btn-sm btn-link"><i class="bi me-1 bi-pencil-square"></i><span>Edit</span></button>
+                                        <button class="btn btn-sm btn-link"><i class="bi me-1 bi-trash"></i><span>Delete</span></button>
                                     </p>
                                 </div>
                             </div>
+                        </div>
+                    </div> -->
+                    <div class="bd-example-snippet bd-code-snippet">
+                        <div class="bd-example m-0 border-0">
+                            <div id="componentFeed"></div>
+                            <script>
+                                // Wait for the DOM to be fully loaded before executing the script
+                                document.addEventListener('DOMContentLoaded', () => {
+                                    (() => {
+                                        builder.Component(
+                                            'feed',
+                                            "#componentFeed",
+                                            {},
+                                            function(feed, component){
+                                                console.log(feed, component);
+                                                feed.control('Share','share');
+                                                feed.control('Edit','pencil-square');
+                                                feed.control('Archive','archive');
+                                                feed.control('Delete','trash');
+                                                let created = new Date().toISOString();
+                                                let modified = new Date(Date.now() + 24 * 60 * 60 * 1000).toISOString();
+                                                feed.add({
+                                                    id: 10000,
+                                                    created: created,
+                                                    modified: created,
+                                                    owner: '<?= $this->Auth->user()->username ?>',
+                                                    title: null,
+                                                    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae nunc vitae dui dapibus tristique. Nunc mollis erat nec felis scelerisque fringilla. Ut non commodo tellus. Curabitur mattis at leo eu feugiat. Proin placerat pulvinar elit sed ultricies. Duis nec varius neque. Phasellus semper bibendum lectus, et pharetra nisl lacinia eget. Praesent non diam tincidunt sapien elementum ultricies vitae sed odio. Maecenas mattis massa eget nulla consectetur, ut vestibulum ipsum blandit. Donec accumsan arcu sit amet tincidunt consequat. Pellentesque et ultrices mi. Nunc risus risus, pretium sed massa et, pharetra rhoncus lacus. Integer nec feugiat turpis. Aliquam lobortis vestibulum nisi, sit amet cursus sem molestie eu.',
+                                                });
+                                                feed.add({
+                                                    id: 10001,
+                                                    created: created,
+                                                    modified: modified,
+                                                    owner: '<?= $this->Auth->user()->username ?>',
+                                                    title: 'Lorem Ipsum',
+                                                    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae nunc vitae dui dapibus tristique. Nunc mollis erat nec felis scelerisque fringilla. Ut non commodo tellus. Curabitur mattis at leo eu feugiat. Proin placerat pulvinar elit sed ultricies. Duis nec varius neque. Phasellus semper bibendum lectus, et pharetra nisl lacinia eget. Praesent non diam tincidunt sapien elementum ultricies vitae sed odio. Maecenas mattis massa eget nulla consectetur, ut vestibulum ipsum blandit. Donec accumsan arcu sit amet tincidunt consequat. Pellentesque et ultrices mi. Nunc risus risus, pretium sed massa et, pharetra rhoncus lacus. Integer nec feugiat turpis. Aliquam lobortis vestibulum nisi, sit amet cursus sem molestie eu.<br><br>Morbi feugiat feugiat malesuada. Phasellus sit amet nulla eu mi aliquet blandit eget vel dolor. Quisque luctus luctus venenatis. Praesent lorem lacus, tincidunt at risus et, consectetur ornare mi. Donec suscipit arcu sed libero imperdiet suscipit. Pellentesque iaculis risus ac odio bibendum euismod. Proin in turpis aliquam felis pretium tincidunt eget ac nisi. Duis dictum, mauris nec sagittis sodales, massa turpis dapibus nulla, in facilisis elit turpis non nisi. Integer placerat tortor sit amet nisl finibus, a consectetur elit rutrum. Integer et blandit arcu. Aenean rutrum, tortor sit amet elementum feugiat, sapien lorem blandit velit, non tincidunt dui est et lectus. Pellentesque id eros eu mauris sagittis hendrerit ut ac elit. Donec varius aliquam mi non pharetra. Sed et enim tortor.',
+                                                });
+                                                feed.add({
+                                                    id: 10002,
+                                                    created: created,
+                                                    modified: modified,
+                                                    owner: '<?= $this->Auth->user()->username ?>',
+                                                    title: 'Lorem Ipsum',
+                                                    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae nunc vitae dui dapibus tristique. Nunc mollis erat nec felis scelerisque fringilla. Ut non commodo tellus. Curabitur mattis at leo eu feugiat. Proin placerat pulvinar elit sed ultricies. Duis nec varius neque. Phasellus semper bibendum lectus, et pharetra nisl lacinia eget. Praesent non diam tincidunt sapien elementum ultricies vitae sed odio. Maecenas mattis massa eget nulla consectetur, ut vestibulum ipsum blandit. Donec accumsan arcu sit amet tincidunt consequat. Pellentesque et ultrices mi. Nunc risus risus, pretium sed massa et, pharetra rhoncus lacus. Integer nec feugiat turpis. Aliquam lobortis vestibulum nisi, sit amet cursus sem molestie eu.<br><br>Morbi feugiat feugiat malesuada. Phasellus sit amet nulla eu mi aliquet blandit eget vel dolor. Quisque luctus luctus venenatis. Praesent lorem lacus, tincidunt at risus et, consectetur ornare mi. Donec suscipit arcu sed libero imperdiet suscipit. Pellentesque iaculis risus ac odio bibendum euismod. Proin in turpis aliquam felis pretium tincidunt eget ac nisi. Duis dictum, mauris nec sagittis sodales, massa turpis dapibus nulla, in facilisis elit turpis non nisi. Integer placerat tortor sit amet nisl finibus, a consectetur elit rutrum. Integer et blandit arcu. Aenean rutrum, tortor sit amet elementum feugiat, sapien lorem blandit velit, non tincidunt dui est et lectus. Pellentesque id eros eu mauris sagittis hendrerit ut ac elit. Donec varius aliquam mi non pharetra. Sed et enim tortor.<br><br>Quisque eget arcu facilisis, tincidunt erat tristique, rhoncus orci. Ut congue dictum orci. Sed nec mattis purus, vitae efficitur massa. Suspendisse luctus non lacus sit amet volutpat. Phasellus malesuada congue risus in tincidunt. Praesent ornare, ante a tempus bibendum, leo tellus rhoncus mauris, vitae mollis enim est eu ligula. Aenean viverra vitae nulla non interdum. Etiam quis ullamcorper lorem.<br><br>Ut condimentum dignissim nisl, sed tincidunt justo bibendum et. Donec at laoreet odio. Sed sed augue at elit dictum viverra ac a ante. Morbi nec ipsum commodo, luctus sem sed, volutpat leo. Vivamus at venenatis sapien. Quisque dignissim tempus cursus. Vivamus euismod nec quam luctus commodo. Etiam venenatis tristique nisl, eget tristique mi porttitor nec. Suspendisse porttitor elit ex, eget consequat nisi porttitor ornare. In tempor id quam eu dapibus. Proin viverra sem sed elit volutpat ullamcorper. Duis erat nunc, dictum non erat semper, tempor varius felis. Vestibulum tempor et ligula quis consequat. Phasellus id tortor ut mi tristique facilisis.',
+                                                });
+                                            },
+                                        );
+                                    })();
+                                });
+                            </script>
                         </div>
                     </div>
                 </div>
