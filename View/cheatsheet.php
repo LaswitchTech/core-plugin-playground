@@ -1525,35 +1525,6 @@
             </aside>
             <article class="col-12 col-md-10 my-3" id="feed">
                 <div>
-                    <!-- <div class="bd-example-snippet bd-code-snippet">
-                        <div class="bd-example m-0 border-0">
-                            <div class="feed">
-                                <div class="post">
-                                    <div class="title"><h2 class="title"></h2></div>
-                                    <div class="owner">
-                                        <img class="avatar" src="/avatar?username=<?= $this->Auth->user()->username ?>">
-                                        <div class="meta">
-                                            <a class="username" href="#"><?= $this->Auth->user()->username ?></a>
-                                            <div class="metadata">
-                                                <i class="bi-clock me-1"></i>
-                                                <time class="timeago" datetime="12-31-2024 19:00:00"></time>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc facilisis, nibh et accumsan interdum, turpis sapien ultrices eros, consectetur bibendum elit augue a odio. Integer ut nunc commodo, condimentum massa nec, efficitur dolor. Mauris ut enim tellus. Fusce laoreet ultricies turpis et malesuada. Donec a congue nisl. Quisque et rhoncus justo. Integer commodo purus a aliquam finibus.</p>
-                                    <div class="more"><button type="button" class="btn btn-sm btn-outline-primary">Show more</button></div>
-                                    <p class="controls user-select-none">
-                                        <button class="btn btn-sm btn-link"><i class="bi me-1 bi-hand-thumbs-up"></i><span>Like</span></button>
-                                        <button class="btn btn-sm btn-link"><i class="bi me-1 bi-share"></i><span>Share</span></button>
-                                        <button class="btn btn-sm btn-link"><i class="bi me-1 bi-sticky"></i><span>Note</span></button>
-                                        <button class="btn btn-sm btn-link"><i class="bi me-1 bi-chat-text"></i><span>Commments</span></button>
-                                        <button class="btn btn-sm btn-link"><i class="bi me-1 bi-pencil-square"></i><span>Edit</span></button>
-                                        <button class="btn btn-sm btn-link"><i class="bi me-1 bi-trash"></i><span>Delete</span></button>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
                     <div class="bd-example-snippet bd-code-snippet">
                         <div class="bd-example m-0 border-0">
                             <div id="componentFeed"></div>
