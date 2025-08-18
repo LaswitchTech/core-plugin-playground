@@ -1933,7 +1933,7 @@
                         </div>
                     </div>
                     <div class="bd-example-snippet bd-code-snippet">
-                        <div class="bd-example m-0 border-0">
+                        <div class="bd-example m-0 border-0 mt-3">
                             <div class="progress-stacked">
                                 <div class="progress" role="progressbar" aria-label="Segment one - default example" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">
                                     <div class="progress-bar"></div>
