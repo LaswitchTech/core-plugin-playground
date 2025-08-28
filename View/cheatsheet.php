@@ -277,6 +277,7 @@
             <li><a class="dropdown-item d-flex align-items-center" href="#ribbon"><?= $this->Locale->get('Ribbon') ?></a></li>
             <li><a class="dropdown-item d-flex align-items-center" href="#scrollspy"><?= $this->Locale->get('Scrollspy') ?></a></li>
             <li><a class="dropdown-item d-flex align-items-center" href="#spinners"><?= $this->Locale->get('Spinners') ?></a></li>
+            <li><a class="dropdown-item d-flex align-items-center" href="#stepper"><?= $this->Locale->get('Stepper') ?></a></li>
             <li><a class="dropdown-item d-flex align-items-center" href="#timeline"><?= $this->Locale->get('Timeline') ?></a></li>
             <li><a class="dropdown-item d-flex align-items-center" href="#toasts"><?= $this->Locale->get('Toasts') ?></a></li>
             <li><a class="dropdown-item d-flex align-items-center" href="#tooltips"><?= $this->Locale->get('Tooltips') ?></a></li>
@@ -1537,7 +1538,6 @@
                                             "#componentFeed",
                                             {},
                                             function(feed, component){
-                                                console.log(feed, component);
                                                 feed.control('Share','share');
                                                 feed.control('Edit','pencil-square');
                                                 feed.control('Archive','archive');
@@ -2212,6 +2212,66 @@
                             <div class="spinner-grow text-black" role="status">
                                 <span class="visually-hidden">Loading...</span>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <aside class="col-12 col-md-2">
+                <h3 class="sticky-top py-3 px-4" style="top: calc(56px + var(--bs-spacer-2) + var(--bs-spacer-2) + var(--bs-border-width) + 38px + var(--bs-spacer-3) + var(--bs-spacer-3) + var(--bs-border-width));">
+                    <?= $this->Locale->get('Stepper') ?>
+                    <button type="button" class="ms-2 btn btn-sm btn-outline-primary" data-bs-toggle="source" data-bs-target="#stepper" data-bs-highlight="4-63,68-127"><i class="bi bi-code-slash"></i></button>
+                </h3>
+            </aside>
+            <article class="col-12 col-md-10 my-3" id="stepper">
+                <div>
+                    <div class="bd-example-snippet bd-code-snippet">
+                        <div class="bd-example m-0 border-0" id="stepper-container">
+                            <script>
+
+                                // Wait for the DOM to be fully loaded before executing the script
+                                document.addEventListener('DOMContentLoaded', () => {
+                                    (() => {
+
+                                        // Create the Stepper
+                                        builder.Component(
+                                            'stepper',
+                                            '#stepper-container',
+                                            {
+                                                class: {
+                                                    control: 'rounded-circle',
+                                                },
+                                            },
+                                            function(stepper, component){
+                                                stepper.add(
+                                                    {
+                                                        'icon': '1-square',
+                                                    },
+                                                    function(step){
+                                                        console.log(step);
+                                                        step.content.addClass('p-5 text-bg-primary')
+                                                    }
+                                                );
+                                                stepper.add(
+                                                    {
+                                                        'icon': '2-square',
+                                                    },
+                                                    function(step){
+                                                        step.content.addClass('p-5 text-bg-secondary')
+                                                    }
+                                                );
+                                                stepper.add(
+                                                    {
+                                                        'icon': '3-square',
+                                                    },
+                                                    function(step){
+                                                        step.content.addClass('p-5 text-bg-success')
+                                                    }
+                                                );
+                                            }
+                                        );
+                                    })();
+                                });
+                            </script>
                         </div>
                     </div>
                 </div>
