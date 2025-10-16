@@ -3058,10 +3058,18 @@
                         const textarea = ide.querySelector('textarea')
                         const source = button.getAttribute('data-bs-target')
                         const highlight = button.getAttribute('data-bs-highlight')
+                        let element = null;
+
+                        // Get the element to display
+                        if (source && source.startsWith('#')) {
+                            element = document.getElementById(source.slice(1));
+                        } else if (source) {
+                            element = document.querySelector(source);
+                        }
 
                         if (source) {
                             ide.setAttribute('data-bs-highlight', highlight || '')
-                            textarea.value = document.querySelector(source).innerHTML.replace(/^\n+|\n+$/g, '') || ''
+                            textarea.value = element.innerHTML.replace(/^\n+|\n+$/g, '') || ''
                         } else {
                             ide.removeAttribute('data-bs-highlight')
                             textarea.value = ''
