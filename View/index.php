@@ -296,6 +296,27 @@
             <li><a class="dropdown-item d-flex align-items-center" href="#spacing"><?= $this->Locale->get('Spacing') ?></a></li>
         </ul>
     </div>
+    <div class="dropdown mx-2">
+        <button type="button" class="btn btn-primary dropdown-toggle" type="button" aria-expanded="false" data-bs-toggle="dropdown"><?= $this->Locale->get('Pages') ?></button>
+        <ul class="dropdown-menu dropdown-menu-end shadow" style="z-index: 1024;">
+            <li><a class="dropdown-item d-flex align-items-center" href="#330">330 - <?= $this->Locale->get('Reset Password') ?></a></li>
+            <li><a class="dropdown-item d-flex align-items-center" href="#400">400 - <?= $this->Locale->get('Bad Request') ?></a></li>
+            <li><a class="dropdown-item d-flex align-items-center" href="#401">401 - <?= $this->Locale->get('Unauthorized') ?></a></li>
+            <li><a class="dropdown-item d-flex align-items-center" href="#403">403 - <?= $this->Locale->get('Forbidden') ?></a></li>
+            <li><a class="dropdown-item d-flex align-items-center" href="#404">404 - <?= $this->Locale->get('Not Found') ?></a></li>
+            <li><a class="dropdown-item d-flex align-items-center" href="#405">405 - <?= $this->Locale->get('Method Not Allowed') ?></a></li>
+            <li><a class="dropdown-item d-flex align-items-center" href="#422">422 - <?= $this->Locale->get('Unprocessable Content') ?></a></li>
+            <li><a class="dropdown-item d-flex align-items-center" href="#423">423 - <?= $this->Locale->get('Locked') ?></a></li>
+            <li><a class="dropdown-item d-flex align-items-center" href="#427">427 - <?= $this->Locale->get('2FA Required') ?></a></li>
+            <li><a class="dropdown-item d-flex align-items-center" href="#428">428 - <?= $this->Locale->get('Verification Required') ?></a></li>
+            <li><a class="dropdown-item d-flex align-items-center" href="#429">429 - <?= $this->Locale->get('Too Many Requests') ?></a></li>
+            <li><a class="dropdown-item d-flex align-items-center" href="#430">430 - <?= $this->Locale->get('Unauthenticated') ?></a></li>
+            <li><a class="dropdown-item d-flex align-items-center" href="#432">432 - <?= $this->Locale->get('Unverified') ?></a></li>
+            <li><a class="dropdown-item d-flex align-items-center" href="#500">500 - <?= $this->Locale->get('Internal Server Error') ?></a></li>
+            <li><a class="dropdown-item d-flex align-items-center" href="#501">501 - <?= $this->Locale->get('Not Implemented') ?></a></li>
+            <li><a class="dropdown-item d-flex align-items-center" href="#503">503 - <?= $this->Locale->get('Service Unavailable') ?></a></li>
+        </ul>
+    </div>
 </nav>
 <main class="pb-5">
     <section id="content">
@@ -2823,6 +2844,187 @@
             </article>
         </div>
     </section>
+    <section id="pages">
+        <h2 class="sticky-top py-3 px-4 mx-2" style="top: calc(56px + var(--bs-spacer-2) + var(--bs-spacer-2) + var(--bs-border-width)); width: fit-content; z-index: 1022;"><?= $this->Locale->get('Pages') ?></h2>
+        <div class="row m-0">
+            <aside class="col-12 col-md-2">
+                <h3 class="sticky-top py-3 px-4" style="top: calc(56px + var(--bs-spacer-2) + var(--bs-spacer-2) + var(--bs-border-width) + 38px + var(--bs-spacer-3) + var(--bs-spacer-3) + var(--bs-border-width));">
+                    330 - <?= $this->Locale->get('Reset Password') ?>
+                    <button type="button" class="ms-2 btn btn-sm btn-outline-primary" data-bs-toggle="source" data-bs-target="#330"><i class="bi bi-code-slash"></i></button>
+                </h3>
+            </aside>
+            <article class="col-12 col-md-10 my-3" id="330">
+                <div class="card shadow internal">
+                    <?php require realpath(__DIR__ . '/../../../../View/330.php'); ?>
+                </div>
+            </article>
+            <aside class="col-12 col-md-2">
+                <h3 class="sticky-top py-3 px-4" style="top: calc(56px + var(--bs-spacer-2) + var(--bs-spacer-2) + var(--bs-border-width) + 38px + var(--bs-spacer-3) + var(--bs-spacer-3) + var(--bs-border-width));">
+                    400 - <?= $this->Locale->get('Bad Request') ?>
+                    <button type="button" class="ms-2 btn btn-sm btn-outline-primary" data-bs-toggle="source" data-bs-target="#400"><i class="bi bi-code-slash"></i></button>
+                </h3>
+            </aside>
+            <article class="col-12 col-md-10 my-3" id="400">
+                <div class="card shadow error">
+                    <?php require realpath(__DIR__ . '/../../../../View/400.php'); ?>
+                </div>
+            </article>
+            <aside class="col-12 col-md-2">
+                <h3 class="sticky-top py-3 px-4" style="top: calc(56px + var(--bs-spacer-2) + var(--bs-spacer-2) + var(--bs-border-width) + 38px + var(--bs-spacer-3) + var(--bs-spacer-3) + var(--bs-border-width));">
+                    401 - <?= $this->Locale->get('Unauthorized') ?>
+                    <button type="button" class="ms-2 btn btn-sm btn-outline-primary" data-bs-toggle="source" data-bs-target="#401"><i class="bi bi-code-slash"></i></button>
+                </h3>
+            </aside>
+            <article class="col-12 col-md-10 my-3" id="401">
+                <div class="card shadow error">
+                    <?php require realpath(__DIR__ . '/../../../../View/401.php'); ?>
+                </div>
+            </article>
+            <aside class="col-12 col-md-2">
+                <h3 class="sticky-top py-3 px-4" style="top: calc(56px + var(--bs-spacer-2) + var(--bs-spacer-2) + var(--bs-border-width) + 38px + var(--bs-spacer-3) + var(--bs-spacer-3) + var(--bs-border-width));">
+                    403 - <?= $this->Locale->get('Forbidden') ?>
+                    <button type="button" class="ms-2 btn btn-sm btn-outline-primary" data-bs-toggle="source" data-bs-target="#403"><i class="bi bi-code-slash"></i></button>
+                </h3>
+            </aside>
+            <article class="col-12 col-md-10 my-3" id="403">
+                <div class="card shadow error">
+                    <?php require realpath(__DIR__ . '/../../../../View/403.php'); ?>
+                </div>
+            </article>
+            <aside class="col-12 col-md-2">
+                <h3 class="sticky-top py-3 px-4" style="top: calc(56px + var(--bs-spacer-2) + var(--bs-spacer-2) + var(--bs-border-width) + 38px + var(--bs-spacer-3) + var(--bs-spacer-3) + var(--bs-border-width));">
+                    404 - <?= $this->Locale->get('Not Found') ?>
+                    <button type="button" class="ms-2 btn btn-sm btn-outline-primary" data-bs-toggle="source" data-bs-target="#404"><i class="bi bi-code-slash"></i></button>
+                </h3>
+            </aside>
+            <article class="col-12 col-md-10 my-3" id="404">
+                <div class="card shadow error">
+                    <?php require realpath(__DIR__ . '/../../../../View/404.php'); ?>
+                </div>
+            </article>
+            <aside class="col-12 col-md-2">
+                <h3 class="sticky-top py-3 px-4" style="top: calc(56px + var(--bs-spacer-2) + var(--bs-spacer-2) + var(--bs-border-width) + 38px + var(--bs-spacer-3) + var(--bs-spacer-3) + var(--bs-border-width));">
+                    405 - <?= $this->Locale->get('Method Not Allowed') ?>
+                    <button type="button" class="ms-2 btn btn-sm btn-outline-primary" data-bs-toggle="source" data-bs-target="#405"><i class="bi bi-code-slash"></i></button>
+                </h3>
+            </aside>
+            <article class="col-12 col-md-10 my-3" id="405">
+                <div class="card shadow error">
+                    <?php require realpath(__DIR__ . '/../../../../View/405.php'); ?>
+                </div>
+            </article>
+            <aside class="col-12 col-md-2">
+                <h3 class="sticky-top py-3 px-4" style="top: calc(56px + var(--bs-spacer-2) + var(--bs-spacer-2) + var(--bs-border-width) + 38px + var(--bs-spacer-3) + var(--bs-spacer-3) + var(--bs-border-width));">
+                    422 - <?= $this->Locale->get('Unprocessable Content') ?>
+                    <button type="button" class="ms-2 btn btn-sm btn-outline-primary" data-bs-toggle="source" data-bs-target="#422"><i class="bi bi-code-slash"></i></button>
+                </h3>
+            </aside>
+            <article class="col-12 col-md-10 my-3" id="422">
+                <div class="card shadow error">
+                    <?php require realpath(__DIR__ . '/../../../../View/422.php'); ?>
+                </div>
+            </article>
+            <aside class="col-12 col-md-2">
+                <h3 class="sticky-top py-3 px-4" style="top: calc(56px + var(--bs-spacer-2) + var(--bs-spacer-2) + var(--bs-border-width) + 38px + var(--bs-spacer-3) + var(--bs-spacer-3) + var(--bs-border-width));">
+                    423 - <?= $this->Locale->get('Locked') ?>
+                    <button type="button" class="ms-2 btn btn-sm btn-outline-primary" data-bs-toggle="source" data-bs-target="#423"><i class="bi bi-code-slash"></i></button>
+                </h3>
+            </aside>
+            <article class="col-12 col-md-10 my-3" id="423">
+                <div class="card shadow error">
+                    <?php require realpath(__DIR__ . '/../../../../View/423.php'); ?>
+                </div>
+            </article>
+            <aside class="col-12 col-md-2">
+                <h3 class="sticky-top py-3 px-4" style="top: calc(56px + var(--bs-spacer-2) + var(--bs-spacer-2) + var(--bs-border-width) + 38px + var(--bs-spacer-3) + var(--bs-spacer-3) + var(--bs-border-width));">
+                    427 - <?= $this->Locale->get('2FA Required') ?>
+                    <button type="button" class="ms-2 btn btn-sm btn-outline-primary" data-bs-toggle="source" data-bs-target="#427"><i class="bi bi-code-slash"></i></button>
+                </h3>
+            </aside>
+            <article class="col-12 col-md-10 my-3" id="427">
+                <div class="card shadow internal">
+                    <?php require realpath(__DIR__ . '/../../../../View/427.php'); ?>
+                </div>
+            </article>
+            <aside class="col-12 col-md-2">
+                <h3 class="sticky-top py-3 px-4" style="top: calc(56px + var(--bs-spacer-2) + var(--bs-spacer-2) + var(--bs-border-width) + 38px + var(--bs-spacer-3) + var(--bs-spacer-3) + var(--bs-border-width));">
+                    428 - <?= $this->Locale->get('Verification Required') ?>
+                    <button type="button" class="ms-2 btn btn-sm btn-outline-primary" data-bs-toggle="source" data-bs-target="#428"><i class="bi bi-code-slash"></i></button>
+                </h3>
+            </aside>
+            <article class="col-12 col-md-10 my-3" id="428">
+                <div class="card shadow error">
+                    <?php require realpath(__DIR__ . '/../../../../View/428.php'); ?>
+                </div>
+            </article>
+            <aside class="col-12 col-md-2">
+                <h3 class="sticky-top py-3 px-4" style="top: calc(56px + var(--bs-spacer-2) + var(--bs-spacer-2) + var(--bs-border-width) + 38px + var(--bs-spacer-3) + var(--bs-spacer-3) + var(--bs-border-width));">
+                    429 - <?= $this->Locale->get('Too Many Requests') ?>
+                    <button type="button" class="ms-2 btn btn-sm btn-outline-primary" data-bs-toggle="source" data-bs-target="#429"><i class="bi bi-code-slash"></i></button>
+                </h3>
+            </aside>
+            <article class="col-12 col-md-10 my-3" id="429">
+                <div class="card shadow error">
+                    <?php require realpath(__DIR__ . '/../../../../View/429.php'); ?>
+                </div>
+            </article>
+            <aside class="col-12 col-md-2">
+                <h3 class="sticky-top py-3 px-4" style="top: calc(56px + var(--bs-spacer-2) + var(--bs-spacer-2) + var(--bs-border-width) + 38px + var(--bs-spacer-3) + var(--bs-spacer-3) + var(--bs-border-width));">
+                    430 - <?= $this->Locale->get('Unauthenticated') ?>
+                    <button type="button" class="ms-2 btn btn-sm btn-outline-primary" data-bs-toggle="source" data-bs-target="#430"><i class="bi bi-code-slash"></i></button>
+                </h3>
+            </aside>
+            <article class="col-12 col-md-10 my-3" id="430">
+                <div class="card shadow internal">
+                    <?php require realpath(__DIR__ . '/../../../../View/430.php'); ?>
+                </div>
+            </article>
+            <aside class="col-12 col-md-2">
+                <h3 class="sticky-top py-3 px-4" style="top: calc(56px + var(--bs-spacer-2) + var(--bs-spacer-2) + var(--bs-border-width) + 38px + var(--bs-spacer-3) + var(--bs-spacer-3) + var(--bs-border-width));">
+                    432 - <?= $this->Locale->get('Unverified') ?>
+                    <button type="button" class="ms-2 btn btn-sm btn-outline-primary" data-bs-toggle="source" data-bs-target="#432"><i class="bi bi-code-slash"></i></button>
+                </h3>
+            </aside>
+            <article class="col-12 col-md-10 my-3" id="432">
+                <div class="card shadow internal">
+                    <?php require realpath(__DIR__ . '/../../../../View/432.php'); ?>
+                </div>
+            </article>
+            <aside class="col-12 col-md-2">
+                <h3 class="sticky-top py-3 px-4" style="top: calc(56px + var(--bs-spacer-2) + var(--bs-spacer-2) + var(--bs-border-width) + 38px + var(--bs-spacer-3) + var(--bs-spacer-3) + var(--bs-border-width));">
+                    500 - <?= $this->Locale->get('Internal Server Error') ?>
+                    <button type="button" class="ms-2 btn btn-sm btn-outline-primary" data-bs-toggle="source" data-bs-target="#500"><i class="bi bi-code-slash"></i></button>
+                </h3>
+            </aside>
+            <article class="col-12 col-md-10 my-3" id="500">
+                <div class="card shadow error">
+                    <?php require realpath(__DIR__ . '/../../../../View/500.php'); ?>
+                </div>
+            </article>
+            <aside class="col-12 col-md-2">
+                <h3 class="sticky-top py-3 px-4" style="top: calc(56px + var(--bs-spacer-2) + var(--bs-spacer-2) + var(--bs-border-width) + 38px + var(--bs-spacer-3) + var(--bs-spacer-3) + var(--bs-border-width));">
+                    501 - <?= $this->Locale->get('Not Implemented') ?>
+                    <button type="button" class="ms-2 btn btn-sm btn-outline-primary" data-bs-toggle="source" data-bs-target="#501"><i class="bi bi-code-slash"></i></button>
+                </h3>
+            </aside>
+            <article class="col-12 col-md-10 my-3" id="501">
+                <div class="card shadow error">
+                    <?php require realpath(__DIR__ . '/../../../../View/501.php'); ?>
+                </div>
+            </article>
+            <aside class="col-12 col-md-2">
+                <h3 class="sticky-top py-3 px-4" style="top: calc(56px + var(--bs-spacer-2) + var(--bs-spacer-2) + var(--bs-border-width) + 38px + var(--bs-spacer-3) + var(--bs-spacer-3) + var(--bs-border-width));">
+                    503 - <?= $this->Locale->get('Service Unavailable') ?>
+                    <button type="button" class="ms-2 btn btn-sm btn-outline-primary" data-bs-toggle="source" data-bs-target="#503"><i class="bi bi-code-slash"></i></button>
+                </h3>
+            </aside>
+            <article class="col-12 col-md-10 my-3" id="503">
+                <div class="card shadow error">
+                    <?php require realpath(__DIR__ . '/../../../../View/503.php'); ?>
+                </div>
+            </article>
+        </div>
+    </section>
 </main>
 <div class="modal modal-dark fade" id="source" tabindex="-1" aria-labelledby="sourceLabel" aria-hidden="true">
     <div class="modal-dialog modal-xl">
@@ -2856,10 +3058,18 @@
                         const textarea = ide.querySelector('textarea')
                         const source = button.getAttribute('data-bs-target')
                         const highlight = button.getAttribute('data-bs-highlight')
+                        let element = null;
+
+                        // Get the element to display
+                        if (source && source.startsWith('#')) {
+                            element = document.getElementById(source.slice(1));
+                        } else if (source) {
+                            element = document.querySelector(source);
+                        }
 
                         if (source) {
                             ide.setAttribute('data-bs-highlight', highlight || '')
-                            textarea.value = document.querySelector(source).innerHTML.replace(/^\n+|\n+$/g, '') || ''
+                            textarea.value = element.innerHTML.replace(/^\n+|\n+$/g, '') || ''
                         } else {
                             ide.removeAttribute('data-bs-highlight')
                             textarea.value = ''
