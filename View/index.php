@@ -2855,7 +2855,7 @@
             </aside>
             <article class="col-12 col-md-10 my-3" id="330">
                 <div class="card shadow internal">
-                    <?php require realpath(__DIR__ . '/../../../../View/330.php'); ?>
+                    <?php $this->Router->render('330',false); ?>
                 </div>
             </article>
             <aside class="col-12 col-md-2">
@@ -2866,7 +2866,7 @@
             </aside>
             <article class="col-12 col-md-10 my-3" id="400">
                 <div class="card shadow error">
-                    <?php require realpath(__DIR__ . '/../../../../View/400.php'); ?>
+                    <?php $this->Router->render('400',false); ?>
                 </div>
             </article>
             <aside class="col-12 col-md-2">
@@ -2877,7 +2877,7 @@
             </aside>
             <article class="col-12 col-md-10 my-3" id="401">
                 <div class="card shadow error">
-                    <?php require realpath(__DIR__ . '/../../../../View/401.php'); ?>
+                    <?php $this->Router->render('401',false); ?>
                 </div>
             </article>
             <aside class="col-12 col-md-2">
@@ -2888,7 +2888,7 @@
             </aside>
             <article class="col-12 col-md-10 my-3" id="403">
                 <div class="card shadow error">
-                    <?php require realpath(__DIR__ . '/../../../../View/403.php'); ?>
+                    <?php $this->Router->render('403',false); ?>
                 </div>
             </article>
             <aside class="col-12 col-md-2">
@@ -2899,7 +2899,7 @@
             </aside>
             <article class="col-12 col-md-10 my-3" id="404">
                 <div class="card shadow error">
-                    <?php require realpath(__DIR__ . '/../../../../View/404.php'); ?>
+                    <?php $this->Router->render('404',false); ?>
                 </div>
             </article>
             <aside class="col-12 col-md-2">
@@ -2910,7 +2910,7 @@
             </aside>
             <article class="col-12 col-md-10 my-3" id="405">
                 <div class="card shadow error">
-                    <?php require realpath(__DIR__ . '/../../../../View/405.php'); ?>
+                    <?php $this->Router->render('405',false); ?>
                 </div>
             </article>
             <aside class="col-12 col-md-2">
@@ -2921,7 +2921,7 @@
             </aside>
             <article class="col-12 col-md-10 my-3" id="422">
                 <div class="card shadow error">
-                    <?php require realpath(__DIR__ . '/../../../../View/422.php'); ?>
+                    <?php $this->Router->render('422',false); ?>
                 </div>
             </article>
             <aside class="col-12 col-md-2">
@@ -2932,7 +2932,7 @@
             </aside>
             <article class="col-12 col-md-10 my-3" id="423">
                 <div class="card shadow error">
-                    <?php require realpath(__DIR__ . '/../../../../View/423.php'); ?>
+                    <?php $this->Router->render('423',false); ?>
                 </div>
             </article>
             <aside class="col-12 col-md-2">
@@ -2943,7 +2943,7 @@
             </aside>
             <article class="col-12 col-md-10 my-3" id="427">
                 <div class="card shadow internal">
-                    <?php require realpath(__DIR__ . '/../../../../View/427.php'); ?>
+                    <?php $this->Router->render('427',false); ?>
                 </div>
             </article>
             <aside class="col-12 col-md-2">
@@ -2954,7 +2954,7 @@
             </aside>
             <article class="col-12 col-md-10 my-3" id="428">
                 <div class="card shadow error">
-                    <?php require realpath(__DIR__ . '/../../../../View/428.php'); ?>
+                    <?php $this->Router->render('428',false); ?>
                 </div>
             </article>
             <aside class="col-12 col-md-2">
@@ -2965,7 +2965,7 @@
             </aside>
             <article class="col-12 col-md-10 my-3" id="429">
                 <div class="card shadow error">
-                    <?php require realpath(__DIR__ . '/../../../../View/429.php'); ?>
+                    <?php $this->Router->render('429',false); ?>
                 </div>
             </article>
             <aside class="col-12 col-md-2">
@@ -2976,7 +2976,7 @@
             </aside>
             <article class="col-12 col-md-10 my-3" id="430">
                 <div class="card shadow internal">
-                    <?php require realpath(__DIR__ . '/../../../../View/430.php'); ?>
+                    <?php $this->Router->render('430',false); ?>
                 </div>
             </article>
             <aside class="col-12 col-md-2">
@@ -2987,7 +2987,7 @@
             </aside>
             <article class="col-12 col-md-10 my-3" id="432">
                 <div class="card shadow internal">
-                    <?php require realpath(__DIR__ . '/../../../../View/432.php'); ?>
+                    <?php $this->Router->render('432',false); ?>
                 </div>
             </article>
             <aside class="col-12 col-md-2">
@@ -2998,7 +2998,7 @@
             </aside>
             <article class="col-12 col-md-10 my-3" id="500">
                 <div class="card shadow error">
-                    <?php require realpath(__DIR__ . '/../../../../View/500.php'); ?>
+                    <?php $this->Router->render('500',false); ?>
                 </div>
             </article>
             <aside class="col-12 col-md-2">
@@ -3009,7 +3009,7 @@
             </aside>
             <article class="col-12 col-md-10 my-3" id="501">
                 <div class="card shadow error">
-                    <?php require realpath(__DIR__ . '/../../../../View/501.php'); ?>
+                    <?php $this->Router->render('501',false); ?>
                 </div>
             </article>
             <aside class="col-12 col-md-2">
@@ -3020,7 +3020,7 @@
             </aside>
             <article class="col-12 col-md-10 my-3" id="503">
                 <div class="card shadow error">
-                    <?php require realpath(__DIR__ . '/../../../../View/503.php'); ?>
+                    <?php $this->Router->render('503',false); ?>
                 </div>
             </article>
         </div>
